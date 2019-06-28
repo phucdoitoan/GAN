@@ -164,7 +164,7 @@ def G_generate(epoch, size=batch_size):
     save_image(generated.view(generated.size(0), 1, 28, 28), 'results/digits_in_epochs/epoch' + str(epoch) + '.png')
 
 all_start = timer()
-for epoch in range(epochs_num): 
+for epoch in range(5): #epochs_num
     epoch_start = timer()
     for it, [real_batch] in enumerate(digits_DataLoader):
         
@@ -258,7 +258,7 @@ save_loss(iter_list, G_loss_list, D_fake_loss_list, D_real_loss_list, 'results/l
 # save parameters
 def save_parameters(paras, path):    
     for i, para in enumerate(paras):
-        pd.DataFrame(para.detach().numpy()).to_csv(path + 'para_' + str(i) + '.csv', index = False)
+        pd.DataFrame(para.detach().cpu().numpy()).to_csv(path + 'para_' + str(i) + '.csv', index = False)
         
 # save paras of trained G
 save_parameters(G.parameters(), 'results/G_para/')
