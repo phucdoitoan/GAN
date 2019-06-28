@@ -164,7 +164,7 @@ def G_generate(epoch, size=batch_size):
     save_image(generated.view(generated.size(0), 1, 28, 28), 'results/digits_in_epochs/epoch' + str(epoch) + '.png')
 
 all_start = timer()
-for epoch in range(5): #epochs_num
+for epoch in range(epochs_num): #epochs_num
     epoch_start = timer()
     for it, [real_batch] in enumerate(digits_DataLoader):
         
