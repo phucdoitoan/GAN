@@ -36,7 +36,7 @@ print('loaded library')
 dtype = torch.cuda.FloatTensor if torch.cuda.is_available() else torch.FloatTensor
 
 # loading data + normalize pixels' values between -1 and +1
-data = pd.read_csv('input_pytorch/mnist-all-70k.csv')
+data = pd.read_csv('~/data/MNIST/mnist-all-70k.csv')
 #labels = data.label.to_numpy()
 img_digits = (data.loc[:, data.columns != 'label'].values/255 - 0.5)*2
 
