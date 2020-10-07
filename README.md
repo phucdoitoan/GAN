@@ -1,30 +1,3 @@
 # GAN
 
-**Few lines of trainig time and loss in terminal**
-
-Epoch 195 :
-    G_loss: 0.9462095499038696
-    D_fake_loss: 0.7413689494132996
-    D_real_loss: 0.4524901807308197
-##### TRAIN EPOCH 195 IN 6.963882599025965 s #####
-Epoch 196 :
-    G_loss: 0.7849327325820923
-    D_fake_loss: 0.7529596090316772
-    D_real_loss: 0.431711345911026
-##### TRAIN EPOCH 196 IN 7.6564625427126884 s #####
-Epoch 197 :
-    G_loss: 1.0028529167175293
-    D_fake_loss: 0.7384418845176697
-    D_real_loss: 0.45542028546333313
-##### TRAIN EPOCH 197 IN 7.781731724739075 s #####
-Epoch 198 :
-    G_loss: 1.0110028982162476
-    D_fake_loss: 0.6894105076789856
-    D_real_loss: 0.5071962475776672
-##### TRAIN EPOCH 198 IN 8.304341480135918 s #####
-Epoch 199 :
-    G_loss: 0.8018195629119873
-    D_fake_loss: 0.739038348197937
-    D_real_loss: 0.5219655632972717
-##### TRAIN EPOCH 199 IN 6.970519717782736 s #####
-ALL TRAINING TIME: 1487.2208852507174
+Implementing Vanilla-[GAN](https://arxiv.org/abs/1406.2661) in Pytorch
